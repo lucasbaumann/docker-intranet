@@ -40,6 +40,6 @@ RUN echo 'zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20131226
     && echo "xdebug.remote_autostart=1" >> $PHP_INI_DIR/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.remote_host=docker.for.win.localhost" >> $PHP_INI_DIR/conf.d/docker-php-ext-xdebug.ini
 
-ENV APACHE_DOCUMENT_ROOT=/var/www/html/intranet
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/intranet-sci
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
