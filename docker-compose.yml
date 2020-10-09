@@ -26,6 +26,7 @@ services:
         - PMA_ARBITRARY=1
     mysql:
         image: mysql:5.7
+        command: mysqld --lower_case_table_names=1
         command: mysqld --sql_mode="STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
         ports: 
         - 3306:3306
