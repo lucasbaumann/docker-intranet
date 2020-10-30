@@ -2,19 +2,20 @@
 
 ## CONTAINER DOCKER (START INTRANET)
 
-**Pré-requisitos**
-Instalar:
->**[VS code](https://code.visualstudio.com/download)**  
->**[Docker for windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)**
+**Pré-requisitos**  
+Instalar:  
+>**[VS code](https://code.visualstudio.com/download)**
+>**[Docker for windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)**  
+>**[FileZilla](https://filezilla-project.org/download.php)**
 
 **Configuração/Procedimentos**  
 Baixar databases
->**[SCI](https://drive.google.com/file/d/15n8BYCh64kpns6qem5ieWtT6ECtUoKnc/view)**  
->**[SCIWEB](https://drive.google.com/file/d/1dwC-GD3RvLp0aM3LLDm5McPKaj4oPp_J/view)**
+>**[DB - sci - sciweb](https://drive.google.com/file/d/1kU9K6z8Tw3gwLcCZB_wOErbDWAeZVWX8/view?usp=sharing)**  
+O arquivo é protegido por senha, solicitar acesso ao responsável  
 
 Descompactar aquivos
 
-Obter arquivos do repositório **docker-intranet**
+Obter arquivos de configuração do repositório **docker-intranet**
 >**[docker-intranet](https://github.com/felipe-felizardo/docker-intranet)**
 
 Efetuar build da imagem do Dockerfile **(Build Image)**
@@ -36,6 +37,22 @@ Inserir os seguintes comandos via **CLI**:
 
 Baixar fontes do repositório **[intranet-sci](https://bitbucket.org/time-w2o/intranet-sci)** e colocar no endereço **var/www/html**
 >Command: git clone <https://user-bitbucket@bitbucket.org/time-w2o/intranet-sci.git>
+
+**Configurando FTP no FileZilla**  
+Solicitar para o responsável arquivo .xml para configuração do FileZilla  
+No FileZilla em Arquivo > Importar > arquivodeconfiguração.xml  
+Depois em Arquivo > Gerenciador de Sites > Selecionar Entradas > Intranet > Conectar  
+Depois disso é possível fazer o Upload dos arquivos para base   Clicando com o botão direito no arquivo que deseja enviar > Upload > Opção substituir
+
+**Acesso ao banco de dados via phpMyAdmin**  
+Pode acessar pelo Docker no botão "Open in browser" ou pelo endereço <http://localhost:8080/>  
+>-Banco de dados local para desenvolvimento:  
+>Servidor: _mysql_  
+>Utilizador: _root_  
+>Palavra-chave: _root_  
+>
+>-Banco de dados oficial:  
+>Solicitar dados de acesso para o responsável
 
 **[Documentação W2O](http://w2o.com.br/documentacao/index.php)** contém informações sobre Intranet  
 Senha: Sci#910204
