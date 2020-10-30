@@ -4,7 +4,7 @@
 
 **Pré-requisitos**  
 Instalar:  
->**[VS code](https://code.visualstudio.com/download)**
+>**[VS code](https://code.visualstudio.com/download)**  
 >**[Docker for windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)**  
 >**[FileZilla](https://filezilla-project.org/download.php)**
 
@@ -42,7 +42,8 @@ Baixar fontes do repositório **[intranet-sci](https://bitbucket.org/time-w2o/in
 Solicitar para o responsável arquivo .xml para configuração do FileZilla  
 No FileZilla em Arquivo > Importar > arquivodeconfiguração.xml  
 Depois em Arquivo > Gerenciador de Sites > Selecionar Entradas > Intranet > Conectar  
-Depois disso é possível fazer o Upload dos arquivos para base   Clicando com o botão direito no arquivo que deseja enviar > Upload > Opção substituir
+Depois disso é possível fazer o Upload dos arquivos para base  
+Clicando com o botão direito no arquivo que deseja enviar > Upload > Opção substituir
 
 **Acesso ao banco de dados via phpMyAdmin**  
 Pode acessar pelo Docker no botão "Open in browser" ou pelo endereço <http://localhost:8080/>  
